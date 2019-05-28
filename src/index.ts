@@ -1,6 +1,12 @@
 import * as program from 'commander'
 import {addAlias, cloneAndInit, listAlias} from "./commands"
 
+const desc = program.description
+// @ts-ignore
+program.description = (str, argsDescription) => {
+  desc(str.trim(), argsDescription)
+}
+
 program
   .version('0.1.0')
 
@@ -12,7 +18,7 @@ Clone repository as template and initialize it.
   For example, 
   * https://github.com/mitsuru793/node-clone-template
   * git@github.com:mitsuru793/node-clone-template.git
-  `.trim())
+  `)
   .action(cloneAndInit)
 
 program
@@ -22,7 +28,7 @@ Alias is expanded to <repository-path> when clone.
   For example, 
   $ clone-template alias-add ruby https://github.com/mitsuru793/ruby-template
   $ clone-template clone ruby new-project-path
-`.trim())
+`)
   .action(addAlias)
 
 program

@@ -1,5 +1,7 @@
-import * as program from 'commander'
+import {Command} from "commander"
 import {addAlias, cloneAndInit, listAlias} from "./commands"
+
+const program = new Command()
 
 const desc = program.description
 // @ts-ignore

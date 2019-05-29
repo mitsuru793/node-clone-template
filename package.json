@@ -1,6 +1,6 @@
 {
   "name": "node-clone-template",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "author": "mitsuru793 <mitsuru793@gmail.com>",
   "license": "MIT",

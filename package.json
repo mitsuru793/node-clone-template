@@ -8,7 +8,8 @@
     "clone-template": "bin/clone-template.js"
   },
   "scripts": {
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "build": "parcel build --target=node src/index.ts"
   },
   "dependencies": {
     "@types/commander": "^2.12.2",

@@ -4,15 +4,23 @@
   "main": "dist/index.js",
   "author": "mitsuru793 <mitsuru793@gmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "clone-template": "bin/clone-template.js"
   },
   "scripts": {
     "dev": "ts-node src/index.ts",
-    "build": "parcel build --target=node src/index.ts"
+    "test": "jest",
+    "build": "webpack",
+    "prepare": "yarn run build",
+    "prepublishOnly": "yarn run test",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "@types/commander": "^2.12.2",
+    "@types/node": "^12.0.4",
     "commander": "^2.20.0",
     "fs-extra": "^8.0.1",
     "simple-git": "^1.113.0",
@@ -20,6 +28,11 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^7.0.0",
-    "typescript": "^3.4.5"
+    "@types/jest": "^24.0.13",
+    "jest": "^24.8.0",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
   }
 }

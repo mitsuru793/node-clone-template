@@ -1,6 +1,6 @@
 import * as fs from 'fs-extra'
 import * as path from 'path'
-import Aliases from "./Aliases"
+import {Aliases} from "./Aliases"
 import {expandPath} from "./util"
 
 const simpleGit = require('simple-git/promise')

@@ -1,6 +1,6 @@
 import * as fs from 'fs-extra'
 
-export default class Aliases {
+export class Aliases {
   private items: { [key: string]: string }
 
   constructor(items: { [key: string]: string }) {

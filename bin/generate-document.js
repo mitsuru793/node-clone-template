@@ -1,6 +1,6 @@
 #!/usr/bin/env ts-node
-import {CommandDocument} from "@mitsuru793/commander-document-generator"
-import {program} from "../src"
+const {CommandDocument} = require("@mitsuru793/commander-document-generator")
+const {program} = require("../dist")
 
 const doc = CommandDocument.parse(program)
 const text = doc.render(`

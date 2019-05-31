@@ -26,6 +26,7 @@
     "simple-git": "^1.113.0"
   },
   "devDependencies": {
+    "@mitsuru793/commander-document-generator": "^0.1.2",
     "@types/fs-extra": "^7.0.0",
     "@types/jest": "^24.0.13",
     "jest": "^24.8.0",

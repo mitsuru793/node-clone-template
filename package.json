@@ -1,6 +1,7 @@
 {
   "name": "node-clone-template",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "description": "This clones a repository as template and initialize it.",
   "main": "dist/index.js",
   "author": "mitsuru793 <mitsuru793@gmail.com>",
   "license": "MIT",

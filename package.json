@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@types/node": "^12.0.4",
+    "cmd-executor": "^1.1.1",
     "commander": "^2.20.0",
     "fs-extra": "^8.0.1",
     "simple-git": "^1.113.0"

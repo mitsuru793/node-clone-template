@@ -7,7 +7,7 @@ export default class Aliases {
     this.items = items
   }
 
-  static load(path): Aliases {
+  static load(path: string): Aliases {
     let data = {}
     if (fs.existsSync(path)) {
       data = fs.readJSONSync(path)
@@ -15,7 +15,7 @@ export default class Aliases {
     return new Aliases(data)
   }
 
-  save(path): Aliases {
+  save(path: string): Aliases {
     fs.ensureFileSync(path)
     fs.writeJsonSync(path, this.items)
     return this

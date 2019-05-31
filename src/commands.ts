@@ -1,8 +1,9 @@
 import * as fs from 'fs-extra'
 import * as path from 'path'
-import * as simpleGit from 'simple-git/promise'
 import Aliases from "./Aliases"
 import {expandPath} from "./util"
+
+const simpleGit = require('simple-git/promise')
 
 const cacheFile = expandPath('~/.cache/node-clone-template/aliases.json')
 

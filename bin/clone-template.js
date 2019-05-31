@@ -1,2 +1,5 @@
 #!/usr/bin/env node
-require('../dist/index.js');
+
+import { program } from "../src";
+
+program.parse(process.argv)

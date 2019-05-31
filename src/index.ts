@@ -38,4 +38,4 @@ program
   .description('List aliases.')
   .action(listAlias)
 
-program.parse(process.argv)
+export { program }
